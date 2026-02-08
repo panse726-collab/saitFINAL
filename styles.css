@@ -677,6 +677,7 @@ transition: all var(--transition-base);
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
             width: 78px;
             height: 78px;
             padding: 1px;
@@ -697,12 +698,15 @@ transition: all var(--transition-base);
 
         .header-logo-image {
             display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: 50% 50%;
             border-radius: 50%;
-            transform: scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
             transform-origin: center center;
             filter: saturate(0.95) contrast(1.1);
         }
@@ -5039,7 +5043,7 @@ width: 100%;
   .header-logo-image{
     border-radius: 50%;
     object-position: 50% 50%;
-    transform: scale(1.56);
+    transform: translate(-50%, -50%) scale(1.56);
   }
 }
 
