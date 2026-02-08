@@ -677,21 +677,21 @@ transition: all var(--transition-base);
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 74px;
-            height: 74px;
-            padding: 2px;
-            border: 1px solid rgba(200, 164, 93, 0.55);
+            width: 78px;
+            height: 78px;
+            padding: 1px;
+            border: 1px solid rgba(200, 164, 93, 0.72);
             border-radius: 50%;
-            background: rgba(11, 11, 15, 0.82);
+            background: rgba(11, 11, 15, 0.86);
             transition: all var(--transition-base);
             overflow: hidden;
             flex-shrink: 0;
-            box-shadow: 0 0 0 1px rgba(200, 164, 93, 0.14) inset;
+            box-shadow: 0 0 18px rgba(200, 164, 93, 0.32), 0 0 0 1px rgba(200, 164, 93, 0.2) inset;
         }
 
         .header-telegram:hover {
-            border-color: rgba(212, 183, 106, 0.9);
-            box-shadow: 0 0 24px rgba(200, 164, 93, 0.34), 0 0 0 1px rgba(212, 183, 106, 0.2) inset;
+            border-color: rgba(212, 183, 106, 0.95);
+            box-shadow: 0 0 28px rgba(200, 164, 93, 0.42), 0 0 0 1px rgba(212, 183, 106, 0.24) inset;
             transform: translateY(-1px);
         }
 
@@ -700,10 +700,11 @@ transition: all var(--transition-base);
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
+            object-position: 50% 50%;
             border-radius: 50%;
-            transform: scale(1.28);
-            filter: saturate(0.92) contrast(1.08);
+            transform: scale(1.5);
+            transform-origin: center center;
+            filter: saturate(0.95) contrast(1.1);
         }
 
         .logo {
@@ -5022,22 +5023,23 @@ width: 100%;
   box-sizing: border-box;
   aspect-ratio: 1 / 1;
   flex: 0 0 auto;
-  min-width: 74px;
-  min-height: 74px;
+  min-width: 78px;
+  min-height: 78px;
 }
 @media (max-width: 860px){
   .header-telegram{
-    width: 58px;
-    height: 58px;
-    min-width: 58px;
-    min-height: 58px;
-    flex: 0 0 58px;
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+    min-height: 62px;
+    flex: 0 0 62px;
     border-radius: 50%;
-    padding: 1px;
+    padding: 0;
   }
   .header-logo-image{
     border-radius: 50%;
-    transform: scale(1.32);
+    object-position: 50% 50%;
+    transform: scale(1.56);
   }
 }
 
