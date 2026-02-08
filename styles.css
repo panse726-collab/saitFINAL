@@ -6902,6 +6902,7 @@ header .container{
 
 .logo{
   width: 100%;
+  color: var(--accent-gold);
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -6952,7 +6953,7 @@ header .container{
 /* Clickable brand link with subtle default glow */
 .header-brand-link{
   display: inline-block;
-  color: inherit;
+  color: var(--accent-gold);
   text-decoration: none;
   text-shadow: 0 0 10px rgba(200, 164, 93, 0.18), 0 2px 10px rgba(200, 164, 93, 0.3);
   transition: text-shadow var(--transition-base), color var(--transition-base), transform var(--transition-base);
