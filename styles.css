@@ -6878,35 +6878,72 @@ html.lightbox-open body {
     }
 }
 
-
-/* Header brand text-only mode (logo badge removed on all viewports) */
+/* Header brand text-only mode (logo removed): left-aligned brand + right burger on mobile */
 .header-telegram,
 .header-logo-image{
   display: none !important;
 }
+
 header .container{
   position: relative;
 }
+
 .header-left{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  justify-content: center;
-  pointer-events: none;
+  position: static !important;
+  left: auto !important;
+  transform: none !important;
+  pointer-events: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 auto;
+  min-width: 0;
 }
-.header-nav{
-  margin-left: auto;
-}
+
 .logo{
   width: 100%;
-  text-align: center;
-  font-size: 2.35rem;
-  letter-spacing: 0.14em;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(2rem, 2.35vw, 2.65rem);
+  letter-spacing: 0.10em;
 }
+
+.header-nav{
+  margin-left: 24px;
+}
+
+/* Mobile: brand stays left, burger stays right, no overlap */
 @media (max-width: 860px){
+  header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .header-left{
+    flex: 1 1 auto;
+    max-width: calc(100% - 62px);
+    margin-right: 8px;
+  }
+
   .logo{
-    font-size: 2rem;
-    letter-spacing: 0.08em;
+    font-size: 1.95rem;
+    letter-spacing: 0.07em;
+    text-align: left;
+  }
+
+  .header-right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+  }
+
+  .header-menu-btn{
+    margin-left: auto;
   }
 }
