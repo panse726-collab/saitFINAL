@@ -709,7 +709,9 @@ transition: all var(--transition-base);
             border-radius: 9px;
             transform: translate(-50%, -50%) scale(2.15);
             transform-origin: center center;
-            filter: saturate(0.98) contrast(1.08);
+            mix-blend-mode: screen;
+            opacity: 0.98;
+            filter: saturate(1.04) contrast(1.12) brightness(1.06);
         }
 
         .logo {
@@ -5047,6 +5049,8 @@ width: 100%;
     border-radius: 7px;
     object-position: 50% 66%;
     transform: translate(-50%, -50%) scale(2.15);
+    mix-blend-mode: screen;
+    opacity: 0.98;
   }
 }
 
