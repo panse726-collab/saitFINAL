@@ -27,12 +27,10 @@
     <header id="header">
         <div class="container">
             <div class="header-left">
-                <a href="https://t.me/Daniil_Dealer" target="_blank" class="header-telegram" title="Написать в Telegram" data-link="settings.telegram_link">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161l-1.97 9.296c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.538-.194 1.006.128.833.927z"/>
-                    </svg>
+                <a href="index.php" class="header-telegram header-logo-link" aria-label="Daniil Romanovich">
+                    <img src="images/logo.jpg" alt="Daniil Romanovich logo" class="header-logo-image" loading="eager" decoding="async">
                 </a>
-                <div class="logo" data-content="settings.site_name">ДАНИИЛ РОМАНОВИЧ</div>
+                <div class="logo" data-content="settings.site_name">Daniil Romanovich</div>
             </div>
 
             <nav class="header-nav" aria-label="Навигация">
