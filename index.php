@@ -27,7 +27,7 @@
     <header id="header">
         <div class="container">
             <div class="header-left">
-                <div class="logo" data-content="settings.site_name">Daniil Romanovich</div>
+                <a href="index.php" class="logo header-brand-link" data-content="settings.site_name" aria-label="Daniil Romanovich">Daniil Romanovich</a>
             </div>
 
             <nav class="header-nav" aria-label="Навигация">
