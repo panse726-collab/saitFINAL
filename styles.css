@@ -706,7 +706,7 @@ transition: all var(--transition-base);
             object-fit: cover;
             object-position: 50% 50%;
             border-radius: 9px;
-            transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.7);
             transform-origin: center center;
             filter: saturate(0.98) contrast(1.08);
         }
@@ -5045,7 +5045,7 @@ width: 100%;
     height: 100%;
     border-radius: 7px;
     object-position: 50% 50%;
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(1.7);
   }
 }
 
