@@ -27,9 +27,6 @@
     <header id="header">
         <div class="container">
             <div class="header-left">
-                <a href="index.php" class="header-telegram header-logo-link" aria-label="Daniil Romanovich">
-                    <img src="images/logo.PNG" alt="Daniil Romanovich logo" class="header-logo-image" loading="eager" decoding="async">
-                </a>
                 <div class="logo" data-content="settings.site_name">Daniil Romanovich</div>
             </div>
 
