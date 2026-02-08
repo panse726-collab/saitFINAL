@@ -683,11 +683,12 @@ transition: all var(--transition-base);
             padding: 0;
             border: 2px solid rgba(200, 164, 93, 0.78);
             border-radius: 12px;
-            background: transparent;
+            background: transparent !important;
+            background-color: transparent !important;
             transition: all var(--transition-base);
             overflow: hidden;
             flex-shrink: 0;
-            box-shadow: 0 0 14px rgba(200, 164, 93, 0.22);
+            box-shadow: 0 0 12px rgba(200, 164, 93, 0.2);
         }
 
         .header-telegram:hover {
@@ -699,14 +700,14 @@ transition: all var(--transition-base);
         .header-logo-image {
             display: block;
             position: absolute;
-            top: 54%;
+            top: 57%;
             left: 50%;
-            width: 108%;
-            height: 108%;
+            width: 116%;
+            height: 116%;
             object-fit: cover;
-            object-position: 50% 58%;
+            object-position: 50% 66%;
             border-radius: 9px;
-            transform: translate(-50%, -50%) scale(1.9);
+            transform: translate(-50%, -50%) scale(2.15);
             transform-origin: center center;
             filter: saturate(0.98) contrast(1.08);
         }
@@ -5041,11 +5042,11 @@ width: 100%;
     padding: 0;
   }
   .header-logo-image{
-    width: 108%;
-    height: 108%;
+    width: 116%;
+    height: 116%;
     border-radius: 7px;
-    object-position: 50% 58%;
-    transform: translate(-50%, -50%) scale(1.9);
+    object-position: 50% 66%;
+    transform: translate(-50%, -50%) scale(2.15);
   }
 }
 
